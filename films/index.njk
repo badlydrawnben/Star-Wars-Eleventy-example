@@ -1,0 +1,30 @@
+---
+layout: layouts/space.njk
+pagination:
+  data: films.results
+  size: 1
+  alias: films
+permalink: /film/{{ films.title | slug }}/index.html
+--- 
+<!-- Place in Body where you'd like intro to appear -->
+<div class="star-wars-intro">
+
+
+  <!-- All Scrolling Content Goes in here -->
+  <div class="main-content">
+
+    <div class="title-content">
+      <p class="content-header">{{ films.title }}</p>
+
+      <br>
+
+      <p class="content-body">
+        {{ films.opening_crawl }}
+      </p>
+
+      <!-- button or link or whatever -->
+      <a href="./StarScroll.zip" class="space-button">Download The Code Now!</a>
+        
+    </div>
+  </div>
+</div>

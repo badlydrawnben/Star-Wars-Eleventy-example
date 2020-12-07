@@ -16,8 +16,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: var(--darkgray);
-  background-color: var(--white);
+  /* color: var(--darkgra÷te); */
 }
 p:last-child {
   margin-bottom: 0;
@@ -35,7 +34,7 @@ a[href] {
   color: var(--blue);
 }
 a[href]:visited {
-  color: var(--navy);
+  color: var(--lightgray);
 }
 main {
   padding: 1rem;
@@ -223,4 +222,29 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+.home-container{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-container h1{
+  text-transform: uppercase;
+}
+.home-container ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.home-container ul li a{
+  color:yellow;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px 0;
+  display: block;
 }
